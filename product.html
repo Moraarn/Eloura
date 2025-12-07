@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makeup Products | Beauty Line</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Breura</a></div>
+
+      <!-- Hidden checkbox to toggle menu on mobile -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">☰</label>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icons">
+        <!-- Search -->
+        <button class="icon-btn" aria-label="Search" data-tooltip="Search">
+          <svg viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M15.5 14h-.79l-.28-.27a6.48 6.48 0 0 0 1.57-5.34A6.5 6.5 0 1 0 9 15.5a6.48 6.48 0 0 0 5.34-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM10.5 14A3.5 3.5 0 1 1 14 10.5A3.5 3.5 0 0 1 10.5 14z"
+            />
+          </svg>
+        </button>
+
+        <!-- Settings -->
+        <button class="icon-btn" aria-label="Settings" data-tooltip="Settings">
+          <svg viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M12 8a4 4 0 1 1 0 8a4 4 0 0 1 0-8m8.14 4a6.14 6.14 0 0 0-.07-.86l2.11-1.65l-2-3.46l-2.49 1a6.14 6.14 0 0 0-1.49-.86L15.5 2h-4l-.7 3.17a6.14 6.14 0 0 0-1.49.86l-2.49-1l-2 3.46l2.11 1.65a6.14 6.14 0 0 0-.07.86a6.14 6.14 0 0 0 .07.86L2.33 14.51l2 3.46l2.49-1c.46.35.95.64 1.49.86L11.5 22h4l.7-3.17a6.14 6.14 0 0 0 1.49-.86l2.49 1l2-3.46l-2.11-1.65a6.14 6.14 0 0 0 .07-.86Z"
+            />
+          </svg>
+        </button>
+
+        <!-- Profile -->
+        <div class="profile-wrapper">
+          <button
+            class="icon-btn profile-btn"
+            aria-haspopup="true"
+            aria-expanded="false"
+            data-tooltip="Profile"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M12 12a5 5 0 1 0-5-5a5 5 0 0 0 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown -->
+          <ul class="profile-dropdown">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="shop-hero text-white text-lg">
+      <h1>Makeup Products</h1>
+      <div class="shop-content">
+        <p>Premium beauty products to enhance your glow</p>
+      </div>
+    </header>
+
+    <section id="product-container" class="product-grid container">
+      <!-- content will be added using js-->
+      <script src="product.js"></script>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2 class="footer-logo">Breura Bliss</h2>
+          <p>
+            Premium beauty products crafted to enhance your confidence and glow
+            every day.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p>Email: info@breurabliss.com</p>
+          <p>Phone: +254 700 123 456</p>
+
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i> </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Beauty Bliss. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>

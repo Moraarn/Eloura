@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Breura</a></div>
+
+      <!-- Hidden checkbox to toggle menu on mobile -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">☰</label>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icons">
+        <!-- Search -->
+        <button class="icon-btn" aria-label="Search" data-tooltip="Search">
+          <svg viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M15.5 14h-.79l-.28-.27a6.48 6.48 0 0 0 1.57-5.34A6.5 6.5 0 1 0 9 15.5a6.48 6.48 0 0 0 5.34-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM10.5 14A3.5 3.5 0 1 1 14 10.5A3.5 3.5 0 0 1 10.5 14z"
+            />
+          </svg>
+        </button>
+
+        <!-- Settings -->
+        <button class="icon-btn" aria-label="Settings" data-tooltip="Settings">
+          <svg viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M12 8a4 4 0 1 1 0 8a4 4 0 0 1 0-8m8.14 4a6.14 6.14 0 0 0-.07-.86l2.11-1.65l-2-3.46l-2.49 1a6.14 6.14 0 0 0-1.49-.86L15.5 2h-4l-.7 3.17a6.14 6.14 0 0 0-1.49.86l-2.49-1l-2 3.46l2.11 1.65a6.14 6.14 0 0 0-.07.86a6.14 6.14 0 0 0 .07.86L2.33 14.51l2 3.46l2.49-1c.46.35.95.64 1.49.86L11.5 22h4l.7-3.17a6.14 6.14 0 0 0 1.49-.86l2.49 1l2-3.46l-2.11-1.65a6.14 6.14 0 0 0 .07-.86Z"
+            />
+          </svg>
+        </button>
+
+        <!-- Profile -->
+        <div class="profile-wrapper">
+          <button
+            class="icon-btn profile-btn"
+            aria-haspopup="true"
+            aria-expanded="false"
+            data-tooltip="Profile"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M12 12a5 5 0 1 0-5-5a5 5 0 0 0 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown -->
+          <ul class="profile-dropdown">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="hero" id="home">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <h1>Build Smarter. Faster.</h1>
+          <p>
+            Launch your product with clean, modern UI and performance that
+            scales.
+          </p>
+          <a href="product.html" class="hero-btn">Get Started</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://i.pinimg.com/736x/70/5a/19/705a19908603e267e74c7cf65800f5ea.jpg"
+            alt="Tech hero image"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-container">
+        <div class="about-content">
+          <h2>About Our Beauty Line</h2>
+          <p>
+            At Glow & Grace, we believe beauty is more than skin deep. Our
+            products are crafted with natural ingredients to nourish, enhance,
+            and celebrate your unique glow.
+          </p>
+          <p>
+            From luxurious skincare to vibrant cosmetics, we combine innovation
+            and care to bring you products that make you feel confident,
+            radiant, and empowered every day.
+          </p>
+        </div>
+        <div class="about-images">
+          <img
+            src="https://i.pinimg.com/736x/fc/f6/0d/fcf60d56239dffa7e561e2bfa23e9ce3.jpg"
+            alt="Skincare product"
+          />
+          <img
+            src="https://i.pinimg.com/736x/1d/11/94/1d11944beaf6e1a7d7c154d41346bab5.jpg"
+            alt="Makeup palette"
+          />
+          <img
+            src="https://i.pinimg.com/736x/65/3d/e1/653de173e65005b859004636f8185958.jpg"
+            alt="Cosmetic essentials"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="services-container">
+        <h2>Our Services</h2>
+        <p>Experience the best in beauty care with our tailored services.</p>
+
+        <div class="services-cards">
+          <div class="service-card">
+            <img
+              src="https://i.pinimg.com/1200x/8c/a0/4c/8ca04c8eea5955ac895fbf60bdc34bb0.jpg"
+              alt="Skincare Consultation"
+            />
+            <h3>Skincare Consultation</h3>
+            <p>
+              Personalized skincare routines and expert guidance to keep your
+              skin healthy and radiant.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="https://i.pinimg.com/736x/5d/92/28/5d92287daa3426395b49526dd48b11b0.jpg"
+              alt="Makeup Artistry"
+            />
+            <h3>Makeup Artistry</h3>
+            <p>
+              Professional makeup services for events, photoshoots, or just
+              because you deserve to shine.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="https://i.pinimg.com/1200x/ed/19/6d/ed196dbf9f4616e9c7c1e08563e9744d.jpg"
+              alt="Product Recommendations"
+            />
+            <h3>Product Recommendations</h3>
+            <p>
+              Hand-picked beauty products tailored to your skin type and
+              personal style.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-text">
+          <h2>Contact Us</h2>
+          <p>
+            Have a question or want to book a beauty session? We’d love to hear
+            from you.
+          </p>
+
+          <div class="contact-details">
+            <p><strong>Phone:</strong> +254 700 000 000</p>
+            <p><strong>Email:</strong> info@glowandgrace.com</p>
+            <p><strong>Location:</strong> Nairobi, Kenya</p>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2 class="footer-logo">Breura Bliss</h2>
+          <p>
+            Premium beauty products crafted to enhance your confidence and glow
+            every day.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p>Email: info@beautybliss.com</p>
+          <p>Phone: +254 700 123 456</p>
+
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f" ></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i> </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Breura Bliss. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+
+.shop-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  height: auto;
+  background: url("https://i.pinimg.com/736x/ab/00/2a/ab002a9595c8efc14ba1a1cf3bfd2179.jpg")center/cover no-repeat;
+}
+.shop-content {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fcf8c6;
+  font-weight: bold;
+}
+
+.product-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 2rem;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-lg {
+  font-size: 2.25rem;
+}
+
+.product-card img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  max-height: 250px;
+  border-radius: var(--app-border-radius);
+}
