@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="card-content">
               <h3>${product.name}</h3>
               <p>Price: Ksh ${product.price}</p>
-              <button class="btn">Add to Cart</button>
+              <a  href="login.html" class="btn">Add to Cart</a>
             </div>
         </div>
     `

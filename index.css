@@ -103,9 +103,11 @@ img {
   margin-bottom: 10px;;
 }
 
+.footer-col,
 .footer-col h2,
 .footer-col h3 {
   margin-bottom: 15px;
+  color: var(--primary-color);
 }
 
 .footer-col p {
