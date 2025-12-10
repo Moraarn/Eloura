@@ -53,7 +53,7 @@ if (signupForm)
       console.log("Response:", data);
       alert(data.message);
       if (response.ok) {
-        window.location.href = "product.html";
+        window.location.href = "../html/sales.html";
       }
     } catch (error) {
       console.error("Error:", error);
@@ -81,7 +81,7 @@ if (loginForm)
       console.log("Response:", data);
       alert(data.message);
       if (response.ok) {
-        window.location.href = "product.html";
+        window.location.href = "../html/sales.html";
       }
     } catch (error) {
       console.error("Error:", error);
