@@ -28,10 +28,12 @@ body {
 }
 
 .auth-box {
+  
   background: #fff;
   padding: 35px;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
   text-align: center;
 }
 
