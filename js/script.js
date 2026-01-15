@@ -37,13 +37,14 @@ const signupForm = document.getElementById("signup-form");
 if (signupForm)
   signupForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const name = signupForm.name.value;   
+    const name = signupForm.name.value;
     const email = signupForm.email.value;
     const password = signupForm.password.value;
 
-    console.log({ name, email, password });
+    console.log("Signup attempt:", { email });
 
     try {
+     
       const response = await fetch("http://localhost:5000/user/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -67,10 +68,8 @@ if (loginForm)
     e.preventDefault();
     const email = loginForm.email.value;
     const password = loginForm.password.value;
-    console.log({
-      email,
-      password,
-    });
+    console.log("Login attempt:", { email });
+
     try {
       const response = await fetch("http://localhost:5000/user/login", {
         method: "POST",
