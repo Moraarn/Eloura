@@ -226,3 +226,9 @@ img {
 .product-card .btn:hover {
   color: orange;
 }
+.nav-title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.4em;
+}
