@@ -66,6 +66,7 @@ Eloura is a web application designed to provide users with a seamless experience
 <img width="1900" height="927" alt="image" src="https://github.com/user-attachments/assets/5a21eaac-7158-4a1e-b932-0cf599dd7f25" />
 <img width="1906" height="917" alt="image" src="https://github.com/user-attachments/assets/0c3f7e29-44c8-44ee-8e9f-32ba1e6440e8" />
 <img width="1900" height="917" alt="image" src="https://github.com/user-attachments/assets/f254906b-8ba7-4ac6-9c7a-1c4a5c528c69" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ff8273c-7a1e-47d3-86f5-3689846d4e74" />
 
 
 >>>>>>> 2d12f87aaa3173df3a11ff0e2ca328a3fca43dac
