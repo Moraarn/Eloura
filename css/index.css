@@ -232,3 +232,27 @@ img {
   font-weight: bold;
   letter-spacing: 0.4em;
 }
+.sale-banner {
+  color: #2d8d04;
+  
+}
+.nav-links a {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 15px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+ 
+}
+.navigation  {
+  background-color: #fcf8c6;
+  border-bottom: #212221 1px solid;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+   align-items: center;
+  display: flex;
+  justify-content: center;
+}
