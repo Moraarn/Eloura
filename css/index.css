@@ -255,6 +255,9 @@ img {
 .nav-links a {
   font-size: 1rem;
   display: inline-block;
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
   padding: 15px 15px;
   border-radius: 8px;
   transition:
@@ -264,4 +267,58 @@ img {
 }
 .sale-banner {
   color: #e40c0c;
+}
+.has-mega {
+  position: static; /* keep the dropdown anchored to nav item */
+}
+
+/* full width dropdown */
+.mega-menu {
+  position: fixed; /* cover viewport width */
+  top: 109px; /* height of nav bar */
+  left: 0;
+  width: 100vw; /* full viewport width */
+  height: 600px; 
+
+  background: #fff;
+  padding: 2rem 4rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+
+  z-index: 9999; /* above everything */
+}
+
+/* show on hover */
+.has-mega:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* grid layout inside mega menu */
+.mega-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px; 
+  margin: auto; /* center the content horizontally */
+}
+
+.mega-card {
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.mega-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.mega-card h4 {
+  margin: 0.5rem 0 0.25rem;
 }
