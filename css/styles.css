@@ -43,7 +43,7 @@ a {
   color: inherit;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .nav-links a:hover,
 .nav-links a.active {
