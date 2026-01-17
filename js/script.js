@@ -1,3 +1,15 @@
+// Image hover swap
+document.querySelectorAll('.mega-card img').forEach((img) => {
+  img.addEventListener('mouseenter', () => {
+    img.dataset.original = img.src;
+    img.src = img.dataset.hover;
+  });
+  img.addEventListener('mouseleave', () => {
+    img.src = img.dataset.original;
+  });
+});
+
+
 // Smooth scroll for internal links
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", function (e) {
