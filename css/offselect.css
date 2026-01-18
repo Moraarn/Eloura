@@ -1,0 +1,126 @@
+.offselectitems {
+  width: 100%;
+  padding: 2rem;
+  color: #232121;
+  overflow: hidden;
+}
+
+/* Header */
+.offselect-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.offselect-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.offselect-header .featured {
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Arrow buttons */
+.scroll-arrows {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.scroll-arrows button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  color: #111010;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+/* Horizontal scroll container */
+.offselect-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  cursor: grab;
+}
+
+.offselect-scroll:active {
+  cursor: grabbing;
+}
+
+/* Product wrapper (vertical stack) */
+.product-item {
+  flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  scroll-snap-align: start;
+}
+
+/* Image card ONLY */
+.offselect-card {
+  height: 280px;
+  background: #111;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.offselect-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* FULL IMAGE, NO CROPPING */
+  transition: transform 0.4s ease;
+}
+
+.offselect-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Text BELOW the card */
+.product-info {
+  text-align: center;
+}
+.product-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.product-info h3 {
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+.product-info p {
+  margin: 0.25rem 0 0.5rem;
+}
+
+/* Button */
+.p {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .product-item {
+    flex: 0 0 220px;
+  }
+
+  .offselect-card {
+    height: 220px;
+  }
+}
