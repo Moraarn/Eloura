@@ -4,6 +4,7 @@ const products = [
     name: "MINI SIZE,MAJOR GRIP",
     description:
       "Lock dow your look with the new mini mattifying +hydrating primers.",
+      price: "1500",
     image:
       "https://i.pinimg.com/736x/c6/5a/0f/c65a0fc52d4d0224df85f5d8c6daa3b6.jpg",
     hoverImage:
@@ -14,6 +15,7 @@ const products = [
     id: 2,
     name: "REDIFINE YOUR EVERYDAY EYE",
     description: "Amplify your eye look with the latest essentials",
+    price: "2500",
     image:
       "https://i.pinimg.com/736x/a8/bc/ab/a8bcab80f4950b56f500e3925b0072f8.jpg",
     hoverImage:
@@ -24,6 +26,7 @@ const products = [
     id: 2,
     name: "GET THAT BODY GLOWING",
     description: "Indulge in hydrating body faves that feel extra luxe.",
+    price: "3000",
     image:
       "https://i.pinimg.com/1200x/50/4e/60/504e6037f05f1c8f2cbe05ffc5a4106b.jpg",
     hoverImage:
@@ -34,6 +37,7 @@ const products = [
     id: 2,
     name: "SOFTEN AND STUNT",
     description: "Swipe on lip care and olor for a smooth,showstopping pout",
+    price: "1200",
     image:
       "https://i.pinimg.com/1200x/88/56/b3/8856b3194a69fee0959248abcf1d7a30.jpg",
     hoverImage:
@@ -45,6 +49,7 @@ const products = [
     name: "HYDRATE & GLOW BODY LOTION",
     description:
       "Lightweight lotion that deeply hydrates skin for a radiant, dewy finish.",
+      price: "1800",
     image:
       "https://i.pinimg.com/736x/04/75/51/0475511bd483768ebfaf26b9677d1c34.jpg",
     hoverImage:
@@ -56,6 +61,7 @@ const products = [
     name: "MATTE LIP STAIN",
     description:
       "Long-wear, transfer-resistant color with a comfortable velvety matte finish.",
+      price: "2200",
     image:
       "https://i.pinimg.com/736x/44/bd/76/44bd769bcc0a2a29b02e608a1a368281.jpg",
     hoverImage:
@@ -66,6 +72,7 @@ const products = [
     id: 2,
     name: "REFRESHING FACIAL MIST",
     description: "Cooling spray to hydrate and revive skin throughout the day.",
+    price: "1600",
     image:
       "https://i.pinimg.com/736x/1b/ee/99/1bee994f421d4507a6092649bcc69f4a.jpg",
     hoverImage:
@@ -94,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="product-info">
             <h3>${product.name}</h3>
             <p>${product.description}</p>
+            <p class="price">Ksh ${product.price}</p>
             <a href="login.html" class="p">Shop Now</a>
           </div>
         </div>

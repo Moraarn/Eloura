@@ -12,10 +12,6 @@
   align-items: center;
   margin-bottom: 1rem;
 }
-.offselect-header h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 .offselect-header .featured {
   text-decoration: underline;
   color: #000;
@@ -123,4 +119,16 @@
   .offselect-card {
     height: 220px;
   }
+}
+.offselect-header h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  font-weight: bolder;
+  text-decoration: dotted;
+}
+.product-item .price {
+  font-size: 1rem;
+  color: #027e10;
+  font-weight: bold;
 }
