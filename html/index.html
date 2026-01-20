@@ -25,7 +25,8 @@
 
       <div class="icons">
         <!-- sign in -->
-        <div>
+
+        <div id="signin-link">
           <p><a href="../html/login.html">Sign In</a></p>
         </div>
 
@@ -50,7 +51,7 @@
         </button>
 
         <!-- Profile -->
-        <div class="profile-wrapper">
+        <div class="profile-wrapper" id="profile-menu">
           <button
             class="icon-btn profile-btn"
             aria-haspopup="true"
@@ -69,7 +70,9 @@
           <ul class="profile-dropdown">
             <li><a href="#">My Account</a></li>
             <li><a href="#">Settings</a></li>
-            <li><a href="#">Log Out</a></li>
+            <div id="logout-link">
+              <li><a href="#">Log Out</a></li>
+            </div>
           </ul>
         </div>
       </div>
@@ -442,7 +445,7 @@
       </div>
       <section id="product-container" class="product-grid container">
         <!-- content will be added using js-->
-        <script src="../js/product.js"></script>
+        <script type="module" src="../js/product.js"></script>
       </section>
     </section>
 

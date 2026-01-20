@@ -62,7 +62,10 @@ document.addEventListener("DOMContentLoaded", () => {
               <a  href="login.html" class="btn">Add to Cart</a>
             </div>
         </div>
-    `
+    `,
     )
     .join("");
 });
+
+export default products = [ /* ... */ ];
+

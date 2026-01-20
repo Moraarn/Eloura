@@ -99,6 +99,13 @@ a:hover {
   position: relative;
 }
 
+.profile-wrapper .profile-menu {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
 .profile-dropdown {
   display: none;
   flex-direction: column;
@@ -120,6 +127,8 @@ a:hover {
 .profile-dropdown a:hover {
   background: #2d8d04;
 }
+
+
 
 /* Show dropdown on hover */
 .profile-wrapper:hover .profile-dropdown {
