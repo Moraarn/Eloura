@@ -58,6 +58,7 @@ if (signupForm)
     try {
      
       const response = await fetch("http://localhost:5000/user/register", {
+         credentials: "include",
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
@@ -84,6 +85,7 @@ if (loginForm)
 
     try {
       const response = await fetch("http://localhost:5000/user/login", {
+         credentials: "include",
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
